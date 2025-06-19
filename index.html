@@ -21,19 +21,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            opacity: 0;
-            animation: fadeInUp 1s ease-out forwards;
-        }
-        
-        @keyframes fadeInUp {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            opacity: 1;
         }
         
         .header {
@@ -71,23 +59,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s, box-shadow 0.2s;
             overflow: hidden;
-            animation: slideIn 0.5s ease-out forwards;
-            opacity: 0;
-        }
-        
-        .menu-button:nth-child(1) { animation-delay: 0.2s; }
-        .menu-button:nth-child(2) { animation-delay: 0.4s; }
-        .menu-button:nth-child(3) { animation-delay: 0.6s; }
-        
-        @keyframes slideIn {
-            0% {
-                opacity: 0;
-                transform: translateX(-20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateX(0);
-            }
+            opacity: 1;
         }
         
         .menu-button:hover {
@@ -119,9 +91,7 @@
         .calendar-container {
             position: relative;
             width: 100%;
-            animation: slideIn 0.5s ease-out forwards;
-            opacity: 0;
-            animation-delay: 0.8s;
+            opacity: 1;
         }
         
         .calendar-button {
@@ -161,14 +131,14 @@
         .calendar-dropdown {
             display: none;
             position: absolute;
-            bottom: 100%; /* Changed from top to bottom */
+            bottom: 100%;
             left: 0;
             width: 100%;
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             z-index: 10;
-            margin-bottom: 5px; /* Changed from margin-top to margin-bottom */
+            margin-bottom: 5px;
             overflow: hidden;
         }
         
@@ -210,6 +180,11 @@
         <a href="https://ccoocomunicados.netlify.app/" class="menu-button">
             <img src="https://i.ibb.co/R4v19Cvr/Sin-t-tulo8.png" alt="COMUNICADOS">
             <span>COMUNICADOS REDES</span>
+        </a>
+        
+        <a href="https://wordccoo.netlify.app/" class="menu-button">
+            <img src="https://i.ibb.co/1YBwVfFk/1750335641234.png" alt="COMUNICADOS PDF">
+            <span>COMUNICADOS PDF</span>
         </a>
         
         <div class="calendar-container">
